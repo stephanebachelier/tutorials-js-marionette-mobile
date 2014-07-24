@@ -13,6 +13,7 @@
     "backbone.marionette": "^1.8.0",
     "requirejs-plugins": "^1.0.2",
     "backbone.syphon": "~0.4.1",
-    "require.replace": "^0.3.0"
+    "require.replace": "^0.3.0",
+    "ratchet": "~2.0.2"
   }
 }
