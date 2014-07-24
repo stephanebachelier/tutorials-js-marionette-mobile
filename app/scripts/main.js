@@ -4,7 +4,7 @@ require([
   'use strict';
 
   require(['index'], function (Module) {
-    var app = new Module({el: '.hero-unit'});
+    var app = new Module({el: 'body'});
     app.start();
   });
 });
