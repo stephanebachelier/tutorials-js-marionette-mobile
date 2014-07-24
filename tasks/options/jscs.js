@@ -5,7 +5,7 @@ module.exports = {
   options: {
     config: '.jscs.json',
   },
-  code: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
+  code: '<%= jshint.code %>',
   test: ['test/spec/{,*/}*.js'],
   grunt: ['Gruntfile.js', 'tasks/{,*/}*.js']
 };
