@@ -1,23 +1,13 @@
 define([
-  'marionette',
-  'views/main',
-  'views/about'
+  'marionette'
 ],
 
-function (Marionette, MainView, AboutView) {
+function (Marionette) {
   'use strict';
 
   var NavController = Marionette.Controller.extend({
     initialize: function (options) {
       this.region = options.region;
-    },
-
-    home: function () {
-      this.region.show(new MainView());
-    },
-
-    about: function () {
-      this.region.show(new AboutView());
     }
   });
 
