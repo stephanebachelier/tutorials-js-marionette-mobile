@@ -53,7 +53,9 @@ module.exports = function (grunt) {
     configPath: path.join(process.cwd(), 'tasks'),
     init: false,
     config: config,
-    jitGrunt: true
+    jitGrunt: {
+      useminPrepare: 'grunt-usemin'
+    }
   });
 
 };
