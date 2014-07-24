@@ -6,6 +6,7 @@ function (Backbone) {
   'use strict';
 
   return Backbone.Model.extend({
+    idAttribute: '__id',
     defaults: {
     }
   });
