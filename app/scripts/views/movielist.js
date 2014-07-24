@@ -8,6 +8,8 @@ function (Marionette, templates, MovieListItemView) {
   'use strict';
 
   return Marionette.CollectionView.extend({
-    childView: MovieListItemView
+    childView: MovieListItemView,
+    tagName: 'ul',
+    className: 'table-view'
   });
 });
