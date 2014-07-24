@@ -8,6 +8,8 @@ function (Marionette) {
   var Router = Marionette.AppRouter.extend({
     appRoutes: {
       movies: 'list',
+      'movies/:id': 'showMovie',
+
     }
   });
 

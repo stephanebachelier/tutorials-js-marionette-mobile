@@ -18,6 +18,10 @@ function (Marionette, data, Movies, MovieListView) {
       this.region.show(new MovieListView({
         collection: this.movies
       }));
+    },
+
+    showMovie: function (id) {
+      console.log('movie ' + id);
     }
   });
 
