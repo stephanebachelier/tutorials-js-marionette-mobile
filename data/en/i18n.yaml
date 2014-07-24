@@ -1,0 +1,11 @@
+view.about.title: "About this boilerplate"
+view.about.description: "The idea of this boilerplate is to ease the start of an application."
+
+view.about.second.title: "Why ?"
+view.about.why.section: "Yeoman generators are great but IMHO not sufficient for an everyday developer. When you're building lots of SPA you're already doing the same things to setup a project. There are a lots of generators on the wild so I decided to create this boilerplate."
+
+view.about.third.title: "What's inside"
+view.about.inside.section: "This boilerplate is built on top of `yeoman` to create SPA while using Backbone.Marionette. It was started by using `generator-backbone`."
+
+view.about.fourth.title: "Using `yo` generators"
+view.about.yeoman.section: "You can always use `yo` generators while using this boilerplate. While you don't try to bootstrap an app with any generator, you should be fine."
