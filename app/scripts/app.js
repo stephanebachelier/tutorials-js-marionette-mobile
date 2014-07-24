@@ -7,7 +7,7 @@ define([
 function (Backbone, NavController, Router) {
   'use strict';
 
-  return function (options) {
+  return function (options) { // jshint unused:false
     var app = new Backbone.Marionette.Application();
 
     app.addRegions({
