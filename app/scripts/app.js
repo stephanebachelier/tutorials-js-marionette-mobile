@@ -1,21 +1,24 @@
 define([
-  'marionette',
   'backbone',
   'controllers/nav',
   'routers/router'
 ],
 
-function (Marionette, Backbone, NavController, Router) {
+function (Backbone, NavController, Router) {
   'use strict';
 
   return function (options) {
-    var app = new Marionette.Application();
+    var app = new Backbone.Marionette.Application();
 
-    app.addRegions({layout: options.el});
+    app.addRegions({
+      header: 'header',
+      content: '.content',
+      footer: 'nav'
+    });
 
     app.addInitializer(function () {
       this.router = new Router({
-        controller: new NavController({region: app.layout})
+        controller: new NavController({region: app.content})
       });
     });
 
