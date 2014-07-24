@@ -7,6 +7,7 @@ function (Marionette) {
 
   var Router = Marionette.AppRouter.extend({
     appRoutes: {
+      list: 'list'
     }
   });
 
