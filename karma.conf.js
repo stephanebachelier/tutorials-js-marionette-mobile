@@ -14,15 +14,18 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      {pattern: 'app/bower_components/zeptojs/dist/zepto.js', included: false},
+      {pattern: 'app/bower_components/jquery/dist/jquery.js', included: false},
       {pattern: 'app/bower_components/backbone/backbone.js', included: false},
       {pattern: 'app/bower_components/underscore/underscore.js', included: false},
       {pattern: 'app/bower_components/handlebars/handlebars.runtime.amd.js', included: false},
-      {pattern: 'app/bower_components/backbone.marionette/lib/core/amd/backbone.marionette.js', included: false},
+      {pattern: 'app/bower_components/backbone.marionette/lib/core/backbone.marionette.js', included: false},
       {pattern: 'app/bower_components/backbone.babysitter/lib/backbone.babysitter.js', included: false},
       {pattern: 'app/bower_components/backbone.wreqr/lib/backbone.wreqr.js', included: false},
-      {pattern: 'app/bower_components/superagent/superagent.js', included: false},
-      {pattern: 'app/bower_components/fastclick/lib/fastclick.js', included: false},
+      {pattern: 'app/bower_components/backbone.syphon/lib/amd/backbone.syphon.js', included: false},
+      {pattern: 'app/bower_components/requirejs-text/text.js', included: false},
+      {pattern: 'app/bower_components/requirejs-plugins/src/json.js', included: false},
+      {pattern: 'app/bower_components/require.replace/require.replace.js', included: false},
+      {pattern: 'app/fixtures.js', included: false},
       {pattern: '.tmp/scripts/templates.js', included: false},
       {pattern: 'app/scripts/**/*.js', included: false},
       {pattern: 'test/spec/**/*.js', included: false},

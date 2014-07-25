@@ -13,7 +13,6 @@ requirejs.config({
   baseUrl: '/base/app/scripts',
 
   shim: {
-    // zepto
     jquery: {
       exports: '$'
     },
@@ -27,21 +26,41 @@ requirejs.config({
       ],
       exports: 'Backbone'
     },
-    handlebars: {
-      exports: 'Handlebars'
-    }
+    modal: {
+      deps: ['marionette'],
+      exports: 'Backbone.Marionette.Modals'
+    },
+    smoothScroll: {
+      exports: 'smoothScroll'
+    },
+    chosen: ['jquery'],
   },
   paths: {
-    templates: '../../.tmp/scripts/templates',
-    jquery: '../bower_components/zeptojs/dist/zepto',
+    // bower_components
+    jquery: '../bower_components/jquery/dist/jquery',
     backbone: '../bower_components/backbone/backbone',
     underscore: '../bower_components/underscore/underscore',
     'handlebars.runtime': '../bower_components/handlebars/handlebars.runtime.amd',
-    marionette: '../bower_components/backbone.marionette/lib/core/amd/backbone.marionette',
+    marionette: '../bower_components/backbone.marionette/lib/core/backbone.marionette',
     'backbone.babysitter': '../bower_components/backbone.babysitter/lib/backbone.babysitter',
     'backbone.wreqr': '../bower_components/backbone.wreqr/lib/backbone.wreqr',
-    superagent: '../bower_components/superagent/superagent',
-    fastclick: '../bower_components/fastclick/lib/fastclick'
+    syphon: '../bower_components/backbone.syphon/lib/amd/backbone.syphon',
+    text: '../bower_components/requirejs-text/text',
+    json: '../bower_components/requirejs-plugins/src/json',
+    fixtures: '../fixtures',
+    // vendor
+    handlebars: 'vendor/handlebars',
+    // others
+    templates: '../../.tmp/scripts/templates'
+  },
+
+  config: {
+    replace: {
+      pattern: 'data/nls',
+      // give the full path for karma,
+      // it's not working with the relative
+      value: '/base/app/data/en'
+    }
   },
 
   // ask Require.js to load these files (all our tests)
