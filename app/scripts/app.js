@@ -1,10 +1,11 @@
 define([
   'backbone',
   'controllers/nav',
-  'routers/router'
+  'routers/router',
+  'api/movies'
 ],
 
-function (Backbone, NavController, Router) {
+function (Backbone, NavController, Router, getMovies) {
   'use strict';
 
   return function (options) { // jshint unused:false
@@ -18,7 +19,10 @@ function (Backbone, NavController, Router) {
 
     app.addInitializer(function () {
       this.router = new Router({
-        controller: new NavController({region: app.content})
+        controller: new NavController({
+          region: app.content,
+          movies: getMovies()
+        })
       });
     });
 
