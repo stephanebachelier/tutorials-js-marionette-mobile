@@ -3,10 +3,10 @@ define([
   'data/movies',
   'models/movies',
   'views/movielist',
-  'views/movie'
+  'views/moviedetails'
 ],
 
-function (Marionette, data, Movies, MovieListView, MovieView) {
+function (Marionette, data, Movies, MovieListView, MovieDetailsView) {
   'use strict';
 
   var NavController = Marionette.Controller.extend({
@@ -22,9 +22,9 @@ function (Marionette, data, Movies, MovieListView, MovieView) {
     },
 
     showMovie: function (id) {
-      this.region.show(new MovieView({
         model: this.movies.at(0)
       }))
+      this.region.show(new MovieDetailsView({
     }
   });
 
