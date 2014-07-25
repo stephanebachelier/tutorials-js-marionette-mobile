@@ -28,7 +28,6 @@ require.config({
     syphon: '../bower_components/backbone.syphon/lib/amd/backbone.syphon',
     text: '../bower_components/requirejs-text/text',
     json: '../bower_components/requirejs-plugins/src/json',
-    replace: '../bower_components/require.replace/require.replace',
     fixtures: '../fixtures'
   },
 

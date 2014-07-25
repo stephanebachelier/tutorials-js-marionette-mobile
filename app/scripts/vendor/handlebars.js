@@ -1,9 +1,8 @@
 define([
-  'handlebars.runtime',
-  'replace!data/nls/i18n.js'
+  'handlebars.runtime'
 ],
 
-function (Handlebars, i18n) {
+function (Handlebars) {
   'use strict';
 
   // Here you gonna register your Handlebars helpers like this:
@@ -12,10 +11,6 @@ function (Handlebars, i18n) {
   //    return 'bar';
   //  });
   // ```
-
-  Handlebars.default.registerHelper('t', function (key) {
-    return i18n[key] || key;
-  });
 
   return Handlebars;
 });
