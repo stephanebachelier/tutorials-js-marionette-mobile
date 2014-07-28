@@ -15,7 +15,7 @@ function (Marionette, Movies, MovieListView, MovieDetailsView) {
     },
 
     list: function () {
-      this.region.show(new MovieListView({
+      return this.region.show(new MovieListView({
         collection: this.movies
       }));
     },
