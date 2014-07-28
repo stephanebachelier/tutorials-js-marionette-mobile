@@ -1,10 +1,9 @@
 define([
   'marionette',
-  'templates',
   './movielistitem'
 ],
 
-function (Marionette, templates, MovieListItemView) {
+function (Marionette, MovieListItemView) {
   'use strict';
 
   return Marionette.CollectionView.extend({
