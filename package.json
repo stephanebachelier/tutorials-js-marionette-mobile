@@ -4,6 +4,7 @@
   "dependencies": {},
   "devDependencies": {
     "chai": "~1.9.0",
+    "chai-jquery": "^1.2.3",
     "connect-livereload": "~0.3.2",
     "glob": "~3.2.9",
     "grunt": "^0.4.5",
