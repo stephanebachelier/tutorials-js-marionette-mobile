@@ -110,7 +110,7 @@ To run the tests, you can use:
 Tests files are located in `/test/spec`, the library used for tests are :
 
 * [karma](http://karma-runner.github.io/): A test runner that fits all our needs
-* [mocha](http://visionmedia.github.io/mocha/): Making asynchronous testing simple and fun
+* [mocha](http://mochajs.org/): Making asynchronous testing simple and fun
 * [sinon](http://sinonjs.org/): Standalone test spies, stubs and mocks for JavaScript
 * [chai](http://chaijs.com/): BDD / TDD assertion library
 
